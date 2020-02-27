@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Numerical Methods &mdash; Numeric course 0.1 documentation</title>
+  <title>Miniproject 2: Rabbits and foxes &mdash; Numeric course 0.1 documentation</title>
   
 
   
@@ -37,8 +37,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting started" href="course_bootstrap.html" /> 
+    <link rel="search" title="Search" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -52,7 +51,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> Numeric course
+            <a href="index.html" class="icon icon-home"> Numeric course
           
 
           
@@ -106,7 +105,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">Numeric course</a>
+          <a href="index.html">Numeric course</a>
         
       </nav>
 
@@ -135,15 +134,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Numerical Methods</li>
+      <li>Miniproject 2: Rabbits and foxes</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/miniproject2.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -180,21 +179,41 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="numerical-methods">
-<h1>Numerical Methods<a class="headerlink" href="#numerical-methods" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="course_bootstrap.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ugradsyllabus20.html">Undergrad Syllabus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gradsyllabus20.html">Grad Syllabus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="schedule20.html">Detailed Schedule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="texts.html">Optional texts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebook_toc.html">Course/lab descriptions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="week_notes.html">Weekly notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="assignments.html">Weekly assignments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quizzes.html">Quizzes</a></li>
-</ul>
-</div>
+<div class="section" id="miniproject-2-rabbits-and-foxes">
+<span id="mini2"></span><h1>Miniproject 2: Rabbits and foxes<a class="headerlink" href="#miniproject-2-rabbits-and-foxes" title="Permalink to this headline">¶</a></h1>
+<p>Add two new variables (one at a time) to Daisyworld, as specified in
+Lab 5 question predator:</p>
+<p>Variable 1) Concentration of rabbits that eat daisies</p>
+<p>Variable 2) Concentration of foxes that eat rabbits</p>
+<p>You’ll need to come up with:</p>
+<ol class="loweralpha simple">
+<li><p>rabbit and fox birthrates</p></li>
+<li><p>rabbit and fox deathrates</p></li>
+<li><p>a rate at which rabbits eat daisies</p></li>
+<li><p>a rate at which foxes eat rabbits</p></li>
+</ol>
+<p>Note that while we’ve considered Aw and Ab to be non-dimensional
+daisy concentrations (fractions of the planet covered).  They could
+just as easily be daisies per square km.  In the same way
+a fox “area” of 0.1 could be 0.1 foxes per square km, or
+1 fox every 10 square km.</p>
+<p>Try to find values for your initial concentrations and birth/death
+and consumption rates that give an equilibrium in which
+black/white daisies, rabbits and foxes can all coexist.  See if you
+can get “predator-prey” oscillations, in which the fox and rabbit
+populations go through periodic highs and lows.</p>
+<p>In your writeup  state all your assumptions, and discuss:</p>
+<ol class="lowerroman simple">
+<li><p>describe code you added to the standard Lab 5 classes</p></li>
+<li><p>include at least two tests using numpy.testing (I’ll post an example)
+that should pass if your code is correct</p></li>
+<li><p>your strategy for finding the steady state</p></li>
+<li><p>whether the various rates  are
+reasonable, given what you know about daisies and mammals (e.g.
+what do your birth and death rates tell you about the average lifespan of a
+fox or rabbit on your planet, or the number of rabbits
+in a litter?)</p></li>
+</ol>
 </div>
 
 
@@ -202,13 +221,6 @@
            
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="course_bootstrap.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>
